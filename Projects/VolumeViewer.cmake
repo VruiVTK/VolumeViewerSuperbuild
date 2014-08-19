@@ -7,6 +7,7 @@ SET(VolumeViewer_ROOT
 SET(VolumeViewer_CMAKE_ARGS
   -DVRUI_PKGCONFIG_DIR:PATH=${VRUI_ROOT}/pkgconfig
   -DVTK_DIR:PATH=${VTK_ROOT}/bld
+  -DCMAKE_INSTALL_PREFIX:PATH=${CMAKE_BINARY_DIR}
   )
 
 ExternalProject_Add(
@@ -20,6 +21,5 @@ ExternalProject_Add(
   SOURCE_DIR "${VolumeViewer_ROOT}/src"
   BINARY_DIR "${VolumeViewer_ROOT}/bld"
   CMAKE_ARGS ${VolumeViewer_CMAKE_ARGS}
-  INSTALL_COMMAND ""
   )
 
