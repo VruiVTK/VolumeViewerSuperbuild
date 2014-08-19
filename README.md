@@ -1,5 +1,5 @@
-VruiVTKSuperbuild
-=================
+VolumeViewerSuperbuild
+=======================
 
 Superbuild that builds all dependencies including VRUI, VTK and VolumeViewer
 
